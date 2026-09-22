@@ -16,10 +16,10 @@ jobs:
       # DO NOT hardcode tokens. Put them in Secrets.
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4 # This action clones the content of the current repo into the remote runner
+        uses: actions/checkout@v7 # This action clones the content of the current repo into the remote runner
 
       - name: Setup Python
-        uses: actions/setup-python@v5 # This action installs python (version below)
+        uses: actions/setup-python@v7 # This action installs python (version below)
         with:
           python-version: "3.11" 
 
